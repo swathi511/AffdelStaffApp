@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (checkSelfPermission(Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED) {
                 TelephonyManager telephonyManager = (TelephonyManager) this.getSystemService(Context.TELEPHONY_SERVICE);
-                System.out.println("IMIE number is "+telephonyManager.getDeviceId()+telephonyManager.getImei());
+                //System.out.println("IMIE number is "+telephonyManager.getDeviceId()+telephonyManager.getImei());
 
                 if(Build.VERSION.SDK_INT<=26) {
                     stDeviceId = telephonyManager.getDeviceId();
